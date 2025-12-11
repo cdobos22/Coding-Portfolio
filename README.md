@@ -6,6 +6,26 @@ Business Intelligence and Analytics, B.S.
 
 
 ### Projects
-Different dataset analysis
-dygraphs research
-Will add R code game
+# dygraphs research and analysis
+library(dygraphs)
+lungDeaths <- cbind(mdeaths, fdeaths)
+dygraph(lungDeaths)
+
+dygraph(lungDeaths) %>% dyRangeSelector()
+
+
+dygraph(lungDeaths) %>%
+  dySeries("mdeaths", label = "Male") %>%
+  dySeries("fdeaths", label = "Female") %>%
+  dyOptions(stackedGraph = T) %>%
+  dyRangeSelector(height = 20)
+
+hw <- HoltWinters(ldeaths)
+predicted <- predict(hw, n.ahead = 72, prediction.interval = TRUE)
+
+dygraph(predicted, main = "Predicted Lung Deaths (UK)") %>%
+  dyAxis("x", drawGrid = FALSE) %>%
+  dySeries(c("lwr", "fit", "upr"), label = "Deaths") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(3, "Set1"))  
+
+  #
