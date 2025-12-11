@@ -18,9 +18,3 @@ See file [here](https://github.com/cdobos22/Coding-Portfolio/blob/main/Quiz%204%
 ### Logistic Regression Model
 
 See file [here](https://github.com/cdobos22/Coding-Portfolio/blob/main/HW%207.R)
-
-plot(house.data$square_feet, house.data$price,
-     main = "Price vs House Square Footage",
-     xlab = "House Square Footage",
-     ylab = "Price of House",
-     pch = 19)
