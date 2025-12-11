@@ -30,7 +30,7 @@ dygraph(predicted, main = "Predicted Lung Deaths (UK)") %>%
 
 ### Different Analysis (logistic/linear models, k clusters)
 
-See file [here] (https://github.com/cdobos22/Coding-Portfolio/blob/main/Quiz%204%20Code.R)
+See file [here](https://github.com/cdobos22/Coding-Portfolio/blob/main/Quiz%204%20Code.R)
 
 ### Logistic Regression Model
 house.data <- read_excel("C:/Users/cdobo/OneDrive/Documents/DSS 445 RScripts/Datasets/HW7 Data.xlsx")
