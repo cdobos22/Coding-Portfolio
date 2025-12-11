@@ -1,12 +1,12 @@
 # Data Science and Analytics
 
-### Education
+# Education
 Finance, B.S.
 Business Intelligence and Analytics, B.S.
 
 
-### Projects
-# Dygraphs Research and Analysis
+# Projects
+### Dygraphs Research and Analysis
 library(dygraphs)
 lungDeaths <- cbind(mdeaths, fdeaths)
 dygraph(lungDeaths)
@@ -28,7 +28,7 @@ dygraph(predicted, main = "Predicted Lung Deaths (UK)") %>%
   dySeries(c("lwr", "fit", "upr"), label = "Deaths") %>%
   dyOptions(colors = RColorBrewer::brewer.pal(3, "Set1"))  
 
-  # Different Analysis (logistic/linear models, k clusters)
+### Different Analysis (logistic/linear models, k clusters)
   bike.sales <- read_csv("C:/Users/cdobo/OneDrive/Documents/DSS 445 RScripts/Datasets/BikeSales_MLR-1.csv")
 
 model <- lm(DailySales ~ AdSpend + FootTraffic + Weekend, data = bike.sales)
@@ -46,7 +46,7 @@ k3.fit
 str(k3.fit)
 fviz_cluster(k3.fit, data = fitness1, ggtheme = theme_minimal())
 
-# Logistic Regression Model
+### Logistic Regression Model
 house.data <- read_excel("C:/Users/cdobo/OneDrive/Documents/DSS 445 RScripts/Datasets/HW7 Data.xlsx")
 head(house.data)
 summary(house.data)
