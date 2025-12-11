@@ -6,7 +6,7 @@ Business Intelligence and Analytics, B.S.
 
 
 ### Projects
-# dygraphs research and analysis
+# Dygraphs Research and Analysis
 library(dygraphs)
 lungDeaths <- cbind(mdeaths, fdeaths)
 dygraph(lungDeaths)
@@ -28,4 +28,5 @@ dygraph(predicted, main = "Predicted Lung Deaths (UK)") %>%
   dySeries(c("lwr", "fit", "upr"), label = "Deaths") %>%
   dyOptions(colors = RColorBrewer::brewer.pal(3, "Set1"))  
 
-  #
+  # Different Analysis (logistic/linear models, k clusters)
+  
